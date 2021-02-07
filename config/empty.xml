@@ -1,0 +1,98 @@
+<vat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schema.xsd">
+	<vat26>
+		<dane_podstawowe NIP="" nr_dokumentu="" status="" />
+		<nr_zalacznika />
+		<miejsce cel_zlozenia="">
+			<nazwa_urzedu />
+		</miejsce>
+		<dane_podatnika rodzaj_podatnika="">
+			<nazwisko />
+			<imie />
+			<data_urodzenia />
+		</dane_podatnika>
+		<dane_pojazdu>
+			<marka>None</marka>
+			<model>None</model>
+			<numer_rejestracyjny>None</numer_rejestracyjny>
+			<rok_produkkcji></rok_produkkcji>
+			<data_nabycia></data_nabycia>
+			<data_poniesienai></data_poniesienai>
+		</dane_pojazdu>
+		<dane_pojazdu>
+			<marka>None</marka>
+			<model>None</model>
+			<numer_rejestracyjny>None</numer_rejestracyjny>
+			<rok_produkkcji></rok_produkkcji>
+			<data_nabycia></data_nabycia>
+			<data_poniesienai></data_poniesienai>
+		</dane_pojazdu>
+		<dane_pojazdu>
+			<marka>None</marka>
+			<model>None</model>
+			<numer_rejestracyjny>None</numer_rejestracyjny>
+			<rok_produkkcji></rok_produkkcji>
+			<data_nabycia></data_nabycia>
+			<data_poniesienai></data_poniesienai>
+		</dane_pojazdu>
+		<dane_pojazdu>
+			<marka>None</marka>
+			<model>None</model>
+			<numer_rejestracyjny>None</numer_rejestracyjny>
+			<rok_produkkcji></rok_produkkcji>
+			<data_nabycia></data_nabycia>
+			<data_poniesienai></data_poniesienai>
+		</dane_pojazdu>
+		<dane_pojazdu>
+			<marka>None</marka>
+			<model>None</model>
+			<numer_rejestracyjny>None</numer_rejestracyjny>
+			<rok_produkkcji></rok_produkkcji>
+			<data_nabycia></data_nabycia>
+			<data_poniesienai></data_poniesienai>
+		</dane_pojazdu>
+		<dane_pojazdu>
+			<marka>None</marka>
+			<model>None</model>
+			<numer_rejestracyjny>None</numer_rejestracyjny>
+			<rok_produkkcji></rok_produkkcji>
+			<data_nabycia></data_nabycia>
+			<data_poniesienai></data_poniesienai>
+		</dane_pojazdu>
+		<dane_pojazdu>
+			<marka>None</marka>
+			<model>None</model>
+			<numer_rejestracyjny>None</numer_rejestracyjny>
+			<rok_produkkcji></rok_produkkcji>
+			<data_nabycia></data_nabycia>
+			<data_poniesienai></data_poniesienai>
+		</dane_pojazdu>
+		<dane_pojazdu>
+			<marka>None</marka>
+			<model>None</model>
+			<numer_rejestracyjny>None</numer_rejestracyjny>
+			<rok_produkkcji></rok_produkkcji>
+			<data_nabycia></data_nabycia>
+			<data_poniesienai></data_poniesienai>
+		</dane_pojazdu>
+		<dane_pojazdu>
+			<marka>None</marka>
+			<model>None</model>
+			<numer_rejestracyjny>None</numer_rejestracyjny>
+			<rok_produkkcji></rok_produkkcji>
+			<data_nabycia></data_nabycia>
+			<data_poniesienai></data_poniesienai>
+		</dane_pojazdu>
+		<podpis_podatnika>
+			<imie />
+			<nazwisko />
+			<telefon />
+			<data_wypelnienia />
+			<podpis />
+		</podpis_podatnika>
+		<adnotacje>
+			<uwagi />
+			<id_przyjmujacego />
+			<popis_przyjmujacego />
+		</adnotacje>
+	</vat26>
+</vat>

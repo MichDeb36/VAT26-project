@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="vat" type="vat-type"/>
+	
+
+	<xs:complexType name="vat-type">
+		<xs:sequence>
+			<xs:element name="vat26" type="vat26-type"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="vat26-type">
+		<xs:sequence>
+			<xs:element name="dane_podstawowe" type="dane_podstawowe-type"/>
+			<xs:element name="nr_zalacznika" type="xs:int"/>
+			<xs:element name="miejsce" type="miejsce-type"/>
+			<xs:element name="dane_podatnika" type="dane_podatnika-type"/>
+			<xs:sequence minOccurs="1" maxOccurs="9">
+				<xs:element name="dane_pojazdu" type="dane_pojazdu-type"/>
+			</xs:sequence>
+			<xs:element name="podpis_podatnika" type="podpis_podatnika-type"/>
+			<xs:element name="adnotacje" type="adnotacje-type"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="dane_podstawowe-type">
+		<xs:attribute name="NIP" type="typ_NIP"/>
+		<xs:attribute name="nr_dokumentu" type="xs:int"/>
+		<xs:attribute name="status" type="typ_status"/>
+	</xs:complexType>
+	
+	<xs:complexType name="miejsce-type">
+		<xs:sequence>
+			<xs:element name="nazwa_urzedu" type="smallString"/>
+		</xs:sequence>
+		<xs:attribute name="cel_zlozenia" type="informacja"/>
+	</xs:complexType>
+	
+	<xs:complexType name="dane_podatnika-type">
+		<xs:sequence>
+			<xs:element name="nazwisko" type="smallString"/>
+			<xs:element name="imie" type="smallString"/>
+			<xs:element name="data_urodzenia" type="xs:date"/>
+		</xs:sequence>
+		<xs:attribute name="rodzaj_podatnika" type="podatnik"/>
+	</xs:complexType>
+	
+	<xs:complexType name="dane_pojazdu-type">
+		<xs:sequence>
+			<xs:element name="marka" type="smallString"/>
+			<xs:element name="model" type="smallString"/>
+			<xs:element name="numer_rejestracyjny" type="smallString"/>
+			<xs:element name="rok_produkkcji" type="xs:gYear"/>
+			<xs:element name="data_nabycia" type="xs:date"/>
+			<xs:element name="data_poniesienai" type="xs:date"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="podpis_podatnika-type">
+		<xs:sequence>
+			<xs:element name="imie" type="smallString"/>
+			<xs:element name="nazwisko" type="smallString"/>
+			<xs:element name="telefon" type="typ_telefon"/>
+			<xs:element name="data_wypelnienia" type="xs:date"/>
+			<xs:element name="podpis" type="smallString"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="adnotacje-type">
+		<xs:sequence>
+			<xs:element name="uwagi" type="xs:string"/>
+			<xs:element name="id_przyjmujacego" type="smallString"/>
+			<xs:element name="popis_przyjmujacego" type="smallString"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:simpleType name="informacja">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="zlozenie informacji"/>
+			<xs:enumeration value="aktualizacja informacji"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="typ_status">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="aktywny"/>
+			<xs:enumeration value="zakonczona"/>
+			<xs:enumeration value="wstrzymano"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="typ_telefon">
+		<xs:restriction base="xs:integer">
+		  <xs:minInclusive value="100000000"/>
+		  <xs:maxInclusive value="999999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="typ_NIP">
+		<xs:restriction base="xs:integer">
+		  <xs:minInclusive value="1000000000"/>
+		  <xs:maxInclusive value="9999999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="podatnik">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="nie jest osoba fizyczna"/>
+			<xs:enumeration value="jest osoba fizyczna"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="smallString">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>
