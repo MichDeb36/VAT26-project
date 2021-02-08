@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-2"?> 
+<vat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schema.xsd">
+	<vat26>
+		<dane_podstawowe NIP="3451236749" nr_dokumentu="102122" status="aktywny"/>
+		<nr_zalacznika>21</nr_zalacznika>
+		<miejsce cel_zlozenia="zlozenie informacji">
+			<nazwa_urzedu>US Gdansk</nazwa_urzedu>
+		</miejsce>
+		<dane_podatnika rodzaj_podatnika="jest osoba fizyczna">
+			<nazwisko>Kowalski</nazwisko>
+			<imie>Jan</imie>
+			<data_urodzenia>1975-12-12</data_urodzenia>
+		</dane_podatnika>
+		<dane_pojazdu>
+			<marka>Ford</marka>
+			<model>Mustang</model>
+			<numer_rejestracyjny>GD45024</numer_rejestracyjny>
+			<rok_produkkcji>2015</rok_produkkcji>
+			<data_nabycia>2015-09-21</data_nabycia>
+			<data_poniesienai>2015-09-21</data_poniesienai>
+		</dane_pojazdu>
+		<dane_pojazdu>
+			<marka>Ferrari </marka>
+			<model>Aventador</model>
+			<numer_rejestracyjny>GD10224</numer_rejestracyjny>
+			<rok_produkkcji>2017</rok_produkkcji>
+			<data_nabycia>2017-02-11</data_nabycia>
+			<data_poniesienai>2017-02-11</data_poniesienai>
+		</dane_pojazdu>
+		<dane_pojazdu>
+			<marka>Dacia</marka>
+			<model>Duster</model>
+			<numer_rejestracyjny>GD21564</numer_rejestracyjny>
+			<rok_produkkcji>2011</rok_produkkcji>
+			<data_nabycia>2011-02-05</data_nabycia>
+			<data_poniesienai>2011-02-05</data_poniesienai>
+		</dane_pojazdu>
+		<podpis_podatnika>
+			<imie>Jan</imie>
+			<nazwisko>Kowalski</nazwisko>
+			<telefon>678345666</telefon>
+			<data_wypelnienia>2020-04-21</data_wypelnienia>
+			<podpis>Kowalski</podpis>
+		</podpis_podatnika>
+		<adnotacje>
+			<uwagi>Brak</uwagi>
+			<id_przyjmujacego>215678</id_przyjmujacego>
+			<popis_przyjmujacego>Kozlowski</popis_przyjmujacego>
+		</adnotacje>
+	</vat26>
+</vat>
